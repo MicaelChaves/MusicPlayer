@@ -17,58 +17,86 @@
 </head>
 <body>
 
-    
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+                
+            <div class="col-lg-4 mx-2 h-100 p-4 bg-white shadow-lg h-100 wrapper">                
 
-    <div class="wrapper">
+                <div class="top-bar">
+                    <a class="" data-bs-toggle="collapse" href="#collapse-more" role="button" aria-expanded="false" aria-controls="collapse-more"><i class="material-icons">expand_more</i></a>
+                    
+                    <span>Tocando agora</span>
 
-        <div class="top-bar">
-            <i class="material-icons">expand_more</i>
-            <span>Tocando agora</span>
-            <i class="material-icons">more_horiz</i>
-        </div>
+                    <a class="" data-bs-toggle="collapse" href="#collapse-options" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="material-icons">more_horiz</i>
+                    </a>
+                </div>
 
-        <div class="img-area">
-            <img src="" alt="">
-        </div>
-
-        <div class="song-details">
-            <p class="name"></p>
-            <p class="artist"></p>
-        </div>
-
-        <div class="progress-area">
-            <div class="progress-bar">
-            <audio id="main-audio" src=""></audio>
-            </div>
-            <div class="song-timer">
-            <span class="current-time">0:00</span>
-            <span class="max-duration">0:00</span>
-            </div>
-        </div>
-
-        <div class="controls">
-            <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
-            <i id="prev" class="material-icons">skip_previous</i>
-            <div class="play-pause">
-            <i class="material-icons play">play_arrow</i>
-            </div>
-            <i id="next" class="material-icons">skip_next</i>
-            <i id="more-music" class="material-icons">queue_music</i>
-        </div>
-
-        <div class="music-list">
-            <div class="header">
-            <div class="row">
-                <i class= "list material-icons">queue_music</i>
-                <span>Lista de músicas</span>
-            </div>
-            <i id="close" class="material-icons">close</i>
-            </div>
-            <ul>
-            <!-- here li list are coming from js -->
-            </ul>
-        </div>
+                <div class="collapse mt-2" id="collapse-more">
+                    <div class="card card-body shadow">
+                        &lt;3
+                    </div>
+                </div>
+                <div class="collapse mt-2" id="collapse-options">
+                    <div class="card card-body shadow">
+                        :)
+                    </div>
+                </div>
         
+                <div class="w-100 h-50 mt-4 rounded-3 shadow-lg overflow-hidden border border-secondary img-area">
+                    <img src="" alt="Image" class="w-100 h-100">
+                </div>
+        
+                <div class="text-center my-4 song-details">
+                    <p class="mb-0 name"></p>
+
+                    <p class="mt-2 text-muted artist"></p>
+                </div>
+        
+                <div class="my-5 w-100 rounded-5 progress-area">
+                    <div class="progress-bar">
+                        <audio id="main-audio" src=""></audio>
+                    </div>
+
+                    <div class="mt-2 text-muted song-timer">
+                        <span class="current-time">0:00</span>
+                        <span class="max-duration">0:00</span>
+                    </div>
+                </div>
+
+                <hr class="mt-5 mb-0">
+        
+                <div class="mt-5 controls">
+                    <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+
+                    <i id="prev" class="material-icons">skip_previous</i>
+
+                    <div class="play-pause">
+                        <i class="material-icons play">play_arrow</i>
+                    </div>
+
+                    <i id="next" class="material-icons">skip_next</i>
+
+                    <i id="more-music" class="material-icons">queue_music</i>
+                </div>
+        
+                <div class="w-100 shadow-lg music-list">
+                    <div class="header">
+                        <div class="row">
+                            <i class= "list material-icons">queue_music</i>
+                            <span>Lista de músicas</span>
+                        </div>
+                        <i id="close" class="material-icons">close</i>
+                    </div>
+
+                    <ul>
+                        <!-- os itens da lista (li) então sendo gerados pelo JS -->
+                    </ul>
+                </div>
+                
+            </div>
+
+        </div>
     </div>
 
     <script src="js/music-list.js"></script>
