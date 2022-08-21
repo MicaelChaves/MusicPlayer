@@ -1,13 +1,9 @@
-// To add more song, just copy the following code and paste inside the array
-
-//   {
-//     name: "Here is the music name",
-//     artist: "Here is the artist name",
-//     img: "image name here - remember img must be in .jpg formate and it's inside the images folder of this project folder",
-//     src: "music name here - remember img must be in .mp3 formate and it's inside the songs folder of this project folder"
-//   }
-
-//paste it inside the array as more as you want music then you don't need to do any other thing
+// {
+//   name: "O nome da música",
+//   artist: "O nome do artista da música",
+//   img: "O nome do arquivo .jpg que já deve estar na pasta 'images' precisa estar aqui",
+//   src: "O nome do arquivo .mp3 que já deve estar na pasta 'music' precisa estar aqui"
+// }
 
 let allMusic = [
   {
